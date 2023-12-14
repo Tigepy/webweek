@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>titi</title>
+    <title>Accueil - La marche du flocon d'espoir</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="menu">
+        <div class="logo">
+            <img src="images/logova.png" alt="Logo du site">
+            <h1>La marche du flocon d'espoir</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Parcours</a></li>
+            <li><a href="#">Association</a></li>
+            <li><a href="#">Billetterie</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="background-image"></div>
+      <div class="countdown">
+        <h2>Compte à rebours :</h2>
+        <div id="timer">
+          <span id="days"></span> jours
+          <span id="hours"></span> heures
+          <span id="minutes"></span> minutes
+          <span id="seconds"></span> secondes
+        </div>
+      </div>
+      <script src="./scripts/countdown.js"></script>
 </body>
 </html>
