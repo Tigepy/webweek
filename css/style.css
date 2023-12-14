@@ -1,0 +1,74 @@
+/* Reset des marges par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Styles pour le menu */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px; /* Ajuste la taille du logo selon tes besoins */
+    height: 50px; /* Ajuste la taille du logo selon tes besoins */
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 16px; /* Ajuste la taille du titre du site */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Style pour l'image de fond */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bgimage.jpg'); /* Ajoute le chemin de ton image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Pour placer l'image derrière les autres éléments */
+  }
+
+  .countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Assure-toi que le compteur s'affiche au-dessus de l'image de fond */
+  }
+  
