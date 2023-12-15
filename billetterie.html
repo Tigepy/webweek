@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billetterie - La marche du flocon d'espoir</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="css/styleBiletterie.css">
+    <link rel="stylesheet" href="css/footer.css">
+
 </head>
+
 <body>
     <header class="menu">
         <div class="logo">
@@ -21,24 +25,25 @@
             </ul>
         </nav>
     </header>
+    
+    <h2>Billetterie</h2>
 
     <div class="form-container">
-        <h2>Billetterie</h2>
         <form action="#" method="post" class="registration-form">
             <div class="form-row">
                 <div class="form-group">
-                    <label for="nom"><img src="images/user.png" alt="Nom Icon"> Nom :</label>
+                    <label class="with-icon" for="nom"><img src="images/user.png" alt="Nom Icon"> <strong>Nom :</strong></label>
                     <input type="text" id="nom" name="nom" placeholder="Nom *" required>
                 </div>
                 <div class="form-group">
-                    <label for="prenom"><img src="images/users.png" alt="Prénom Icon"> Prénom :</label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Prenom *" required>
+                    <label class="with-icon" for="prenom"><img src="images/users.png" alt="Prénom Icon"> <strong>Prénom :</strong></label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom *" required>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group">
-                    <label for="genre"><img src="images/image 12.png" alt="Genre Icon"> Genre :</label>
+                    <label class="with-icon" for="genre"><img src="images/image 12.png" alt="Genre Icon"> <strong>Genre :</strong></label>
                     <select id="genre" name="genre" required>
                         <option value="homme">Homme</option>
                         <option value="femme">Femme</option>
@@ -46,23 +51,23 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="age"><img src="images/timer.png" alt="Âge Icon"> Âge :</label>
-                    <input type="number" id="age" name="age" placeholder="Age *"required>
+                    <label class="with-icon" for="age"><img src="images/timer.png" alt="Âge Icon"> <strong>Âge :</strong></label>
+                    <input type="number" id="age" name="age" placeholder="Âge *" required>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="email"><img src="images/mail.png" alt="Email Icon"> Adresse e-mail :</label>
+                <label class="with-icon" for="email"><img src="images/mail.png" alt="Email Icon"> Adresse e-mail :</label>
                 <input type="email" id="email" name="email" placeholder="Email *" required>
             </div>
 
             <div class="form-row">
                 <div class="form-group">
-                    <label for="telephone"><img src="images/phone.png" alt="Téléphone Icon"> Téléphone :</label>
+                    <label class="with-icon" for="telephone"><img src="images/phone.png" alt="Téléphone Icon"> <strong>Téléphone :</strong></label>
                     <input type="tel" id="telephone" name="telephone" placeholder="Téléphone *" required>
                 </div>
                 <div class="form-group">
-                    <label for="parcours"><img src="images/map.png" alt="Parcours Icon"> Parcours :</label>
+                    <label class="with-icon" for="parcours"><img src="images/map.png" alt="Parcours Icon"> <strong>Parcours :</strong></label>
                     <input type="text" id="parcours" name="parcours" placeholder="Parcours *" required>
                 </div>
             </div>
@@ -70,5 +75,44 @@
             <button type="submit">Envoyer</button>
         </form>
     </div>
+    <footer>
+        <div class="container">
+            <div class="logo-column">
+                <div class="flocon">
+                <img src="images/logo-velayatlhe.png" alt="Logo">
+                <h3>La Marche du Flocon d'Espoir</h3>
+                </div>
+                <p>La Marche du Flocon d'Espoir : Ensemble, semons des étoiles dans le ciel des Petits Princes!</p>
+            </div>
+            
+            <div class="other-pages-column">
+                <h3>Autres Pages</h3>
+                    <p><a href="#">Compte</a></p>
+                    <p><a href="#">Parcours</a></p>
+                    <p><a href="#">Association</a></p>         
+            </div>
+    
+            <div class="social-media-column">
+                <h3>Réseaux Sociaux</h3>
+                <div class="reseaux-images">
+                    <a href="#"><img src="images/icon _facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/icon_nstagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+    
+            <div class="contact-column">
+                <h3>Contact</h3>
+                <p>Email:</p>
+                <p class="bleu">contact@velay-athletisme.fr</p>
+                <p>Téléphone :</p>
+                <p class="bleu">01 02 03 04 05</p>
+                <p>Adresse :</p>
+                <p class="bleu">5 rue Francheterre, 43 000 LE PUY-EN-VELAY</p>
+            </div>
+        </div>
+        <div class="mentions"><p>Copyright © 2022 - Velay Athlétisme</p></div>
+    </footer>
 </body>
+
 </html>
