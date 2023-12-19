@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        
+        @font-face {
+            font-family: "Poppins";
+            src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        }
+        @page{
+            margin: 0;
+            font-family: "Poppins";
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            font-family: "Poppins";
+        }
+
+        h2{
+            font-family: "Poppins";
+        }
+
+        .main{
+            display: flex;
+        }
+        
+        .fond{
+            right: 0;
+            position: absolute;
+        }
+
+        table {
+            width: 100%;
+            border-spacing:0;
+        }
+        td{
+            padding: 0;
+        }
+        img{
+            height: 280px;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        ul span{
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            font-style: italic;
+        }
+
+        p{
+            position: absolute;
+            top: 40%;
+            right: -50px;
+            color: white;
+            z-index: 1;
+            transform: rotate(-90deg);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+    
+        <!-- <h1>Invoice</h1>
+        <p>Name: {{ name }}</p> -->
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="{{ Chemin }}/images/images/TicketWEWE.png">
+                    </td>
+                    <td>
+                        <h2 style="font-family: 'Poppins, sans-serif';">
+                            La marche du flocon d'espoir
+                        </h2>
+
+                        <ul>
+                            <li><span>Nom : {{ name }}</span> Prénom : {{ prenom }}</li>
+                            <li>Age : {{ age }} </li>   
+                            <li>Tel : {{ telephone }} </li>
+                            <li>Parcours : {{ Parcours }}</li>
+                            <li>Statut de paiement : {{ paiement }}</li> 
+                            <li>Clef :{{ Clef }}</li> 
+                        </ul>
+                    </td>
+                    <td>
+                            <p>Clef :{{ Clef }}</p> 
+                        <img class="fond" src="{{ Chemin }}/images/images/Ticket.png" width="200px">
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
